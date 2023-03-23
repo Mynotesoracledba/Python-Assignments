@@ -1,0 +1,11 @@
+Here we are going to learn about moudle using in python 
+
+s-1
+I have created the file custom_module_calculator_function python file,Here i have added my function codes 
+
+
+s-2:
+
+import the above python file using a variable
+
+import custom_module_calculator_function as cme
