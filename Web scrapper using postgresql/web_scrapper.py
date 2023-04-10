@@ -27,7 +27,7 @@ our_table = soup_content.find('table', class_= 'wikitable sortable')
 
 df = pd.DataFrame(columns=['No', 'Name', 'Net worth', 'Age', 'Nationality', 'Primary source(s) of wealth'])
 
-# Collecting Ddata
+# Collecting row data
 for row in our_table.tbody.find_all('tr'):    
     # Find all data for each column
     columns = row.find_all('td')
@@ -46,7 +46,7 @@ for row in our_table.tbody.find_all('tr'):
 import psycopg2
 
 #connection creation
-connection = psycopg2.connect("dbname=webscrapper user=webscrap host=192.168.225.243 password=Bala7890$$ port=5432")
+connection = psycopg2.connect("dbname=webscrapper user=webscrap host=192.168.255.23 password=Bala$$90 port=5432")
 cursor = connection.cursor()
 #inserting rows into tables
 for i,row in df.iterrows():
